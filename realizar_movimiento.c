@@ -12,7 +12,7 @@ int realizarMovimiento(char tablero[3][3], int jugador) {
         printf("Jugador %d, ingrese fila y columna :\n", jugador);
         scanf("%d %d", &fila, &columna);
         if (fila < 0 || fila >=3 || columna < 0 || columna >=3 || tablero[fila][columna] != ' ') {
-            printf("Movimiento inv·lido. IntÈntalo de nuevo.\n");
+            printf("Movimiento inv√°lido. Int√©ntalo de nuevo.\n");
         } else {
             if(jugador==1){
                 tablero [fila][columna]='x';
@@ -25,8 +25,8 @@ int realizarMovimiento(char tablero[3][3], int jugador) {
                 jugador=1;
             }
         }
-        //mostrarTablero(tablero);
-        //chequeo(tablero,empate);
+        mostrarTablero(tablero);
+        chequeo(tablero,empate);
     }
     return jugador;
 }
