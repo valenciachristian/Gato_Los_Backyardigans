@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <stdio.h>//
 int realizarMovimiento(char tablero[3][3], int jugador);
 int main(){
     char tablero[3][3];
